@@ -42,7 +42,8 @@ $link-hover-color:      darken($link-color, 15%) !default;
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,500&subset=cyrillic,latin);
+//@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,900&subset=cyrillic,latin);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:400,100,300&subset=latin,cyrillic);
 
 $font-family-sans-serif:  Roboto, Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
@@ -67,8 +68,8 @@ $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
+$headings-font-family:    'Roboto Slab' !default;
+$headings-font-weight:    700 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
@@ -335,7 +336,7 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-height:                    100px !default;
+$navbar-height:                    80px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
@@ -343,6 +344,7 @@ $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             #777 !default;
+//$navbar-default-bg:                #f6f4ef !default;
 $navbar-default-bg:                #fff !default;
 //$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 $navbar-default-border:            #fff !default;
