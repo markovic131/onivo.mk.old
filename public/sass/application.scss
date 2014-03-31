@@ -1,8 +1,33 @@
-/* Welcome to Compass.
+/*
+ * Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  */
 @import "vendor/bootstrap";
 
-.container {
-    max-width: 960px;
+body {
+    padding-top: 100px;
 }
+
+nav {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.container {
+    max-width: 940px;
+
+    & > section {
+        padding: 50px 0;
+
+        & > h1 {
+            margin: 0;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+footer {
+    padding: 75px 0;
+}
+
+@import "sections/landing";

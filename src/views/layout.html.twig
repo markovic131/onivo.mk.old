@@ -3,17 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{% block title 'Onivo &middot; Македонија' %}</title>
+        <title>{% block title "Onivo &middot; Македонија" %}</title>
         <meta name="description" content="">
+        <meta name="keywords" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {% block stylesheets %}
             <link rel="stylesheet" href="/css/application.css">
+            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         {% endblock %}
     </head>
     <body>
-        <div class="container">
-            {% block content "" %}
-        </div>
+        {% include '_partials/header.html.twig' %}
+
+        {% block content "" %}
+
+        {% include '_partials/footer.html.twig' %}
         {% block javascripts %}
             <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
