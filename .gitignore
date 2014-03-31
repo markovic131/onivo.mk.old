@@ -1,0 +1,9 @@
+*.sublime-project
+*.sublime-workspace
+
+/vendor
+/public/.sass-cache
+
+composer.phar
+composer.lock
+.DS_Store
