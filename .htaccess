@@ -4,3 +4,8 @@ AddType application/x-httpd-php54 .php
 RewriteEngine on
 RewriteRule ^$ public/    [L]
 RewriteRule (.*) public/$1 [L]
+
+AuthType Basic
+AuthName "Onivo Stage"
+AuthUserFile "/home4/psybaron/.htpasswds/onivo.mk/passwd"
+require valid-user
