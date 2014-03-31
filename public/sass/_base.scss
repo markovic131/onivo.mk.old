@@ -1,0 +1,64 @@
+body {
+    padding-top: 80px;
+}
+
+nav {
+    text-transform: uppercase;
+    font-size: 13px;
+
+    #navigation {
+        & > li.active a {
+            padding-top: 27px;
+            background-color: transparent;
+            color: $navbar-default-link-hover-color;
+            border-top: 3px solid $brand-primary;
+        }
+        & > li.login a {
+            font-weight: bold;
+            color: $brand-primary;
+        }
+    }
+}
+
+footer {
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: #fff;
+    background-color: #323d43;
+    box-shadow: inset 1px 3px 3px #333;
+    border-top: 1px solid #ccc;
+
+    #copyright {
+        padding-top: 80px;
+        text-align: center;
+        text-transform: uppercase;
+        a {
+            color: #fff;
+            &:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.container {
+    max-width: 940px;
+
+    & > section {
+        padding: 100px 0;
+
+        & > h1 {
+            margin: 0;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.wrapper-gray {
+    color: #fff;
+    background-color: #323d43;
+    box-shadow: 0 2px 3px #ccc;
+
+}
