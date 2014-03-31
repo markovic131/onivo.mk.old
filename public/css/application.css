@@ -5776,14 +5776,21 @@ nav #navigation > li.login a {
 footer {
   padding-top: 100px;
   padding-bottom: 50px;
-  color: #fff;
-  background-color: #323d43;
+  color: #e1e1e1;
+  background-color: #353739;
   box-shadow: inset 1px 3px 3px #333;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #fff;
 }
 footer h3 {
   margin: 0;
   margin-bottom: 25px;
+  text-shadow: 1px 3px 3px #333;
+}
+footer #social a {
+  color: #e1e1e1;
+}
+footer #social a:hover {
+  color: #fff;
 }
 footer #copyright {
   padding-top: 80px;
@@ -5809,10 +5816,18 @@ footer #copyright a:hover {
   margin-bottom: 50px;
 }
 
-.wrapper-gray {
+.wrapper.gray {
   color: #fff;
   background-color: #323d43;
   box-shadow: 0 2px 3px #ccc;
+}
+.wrapper.lightGray {
+  background-color: #d3d3d3;
+}
+.wrapper.lightGray h3 {
+  font-size: 20px;
+  color: #686864;
+  text-shadow: 0 2px 0 #efefec;
 }
 
 /**
@@ -5849,3 +5864,26 @@ footer #copyright a:hover {
 /**
  * Pricing Section
  */
+#pricing section {
+  padding-bottom: 50px;
+}
+#pricing .plan {
+  text-align: center;
+}
+#pricing .plan .panel-heading {
+  padding: 15px 28px;
+}
+#pricing .plan .panel-heading h3 {
+  margin: 0;
+}
+#pricing .plan ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#pricingAux {
+  box-shadow: inset 1px 3px 3px #ccc;
+}
+#pricingAux section {
+  padding: 50px 0;
+}

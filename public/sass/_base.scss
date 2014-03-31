@@ -24,14 +24,24 @@ footer {
 
     padding-top: 100px;
     padding-bottom: 50px;
-    color: #fff;
-    background-color: #323d43;
+    color: #e1e1e1;
+    background-color: #353739;
     box-shadow: inset 1px 3px 3px #333;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #fff;
 
     h3 {
         margin: 0;
         margin-bottom: 25px;
+        text-shadow: 1px 3px 3px #333;
+    }
+
+    #social {
+        a {
+            color: #e1e1e1;
+            &:hover {
+                color: #fff;
+            }
+        }
     }
 
     #copyright {
@@ -61,9 +71,22 @@ footer {
     }
 }
 
-.wrapper-gray {
-    color: #fff;
-    background-color: #323d43;
-    box-shadow: 0 2px 3px #ccc;
+.wrapper {
+
+    &.gray {
+        color: #fff;
+        background-color: #323d43;
+        box-shadow: 0 2px 3px #ccc;
+    }
+
+    &.lightGray {
+        background-color: #d3d3d3;
+
+        h3 {
+            font-size: 20px;
+            color: #686864;
+            text-shadow: 0 2px 0 #efefec;
+        }
+    }
 
 }
