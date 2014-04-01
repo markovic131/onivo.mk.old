@@ -20,9 +20,7 @@ $app->error(function (\Exception $e) use ($app) {
 
     }
 
-    $code = ($e instanceof HttpException) ? $e->getStatusCode() : 500;
-
-    return $app['twig']->render('_errors/404.twig', ['code' => $code]);
+    return $app['twig']->render('_errors/500.twig');
 });
 
 //Routes

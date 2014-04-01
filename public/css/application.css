@@ -5869,6 +5869,12 @@ footer #copyright a:hover {
 }
 #pricing .plan {
   text-align: center;
+  box-shadow: 0 3px 5px #ccc;
+}
+#pricing .plan.plan-popular {
+  margin-top: -1em;
+  zoom: 110%;
+  -moz-transform: scale(1.1);
 }
 #pricing .plan .panel-heading {
   padding: 15px 28px;
@@ -5876,9 +5882,18 @@ footer #copyright a:hover {
 #pricing .plan .panel-heading h3 {
   margin: 0;
 }
-#pricing .plan ul li {
+#pricing .plan .panel-body ul li {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+#pricing .plan .panel-body ul li .emp {
+  font-weight: bold;
+}
+#pricing .plan .panel-footer h3 {
+  font-size: 32px;
+}
+#pricing .plan .panel-footer h3 .currency {
+  font-size: 20px;
 }
 
 #pricingAux {
