@@ -10,7 +10,7 @@
 
     .plan {
         text-align: center;
-        box-shadow: 0 3px 5px #ccc;
+        box-shadow: 0 5px 8px #ccc;
 
         &.plan-popular {
             margin-top: -1em;
@@ -21,6 +21,7 @@
         .panel-heading {
 
             padding: 15px 28px;
+            text-transform: uppercase;
 
             h3 {
                 margin:0;
@@ -44,7 +45,8 @@
             h3 {
                 font-size: 32px;
                 .currency {
-                    font-size: 20px;
+                    color: #999;
+                    font-size: 16px;
                 }
             }
         }

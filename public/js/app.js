@@ -206,4 +206,24 @@
 $(function() {
     //Activate One Page scroll to navigation
     $('#navigation').onePageNav();
+
+    $('#interval').on('change',function(){
+        var Me = $(this);
+        showPricesForInterval(Me.val());
+    });
 });
+
+function showPricesForInterval (interval) {
+    var classicUnitPrice = 399,
+        premiumUnitPrice = 899;
+
+    if(interval) {
+        $('small.interval').html(interval + ' месеци');
+        $('#classicPrice').html(classicUnitPrice * interval);
+        $('#premiumPrice').html(premiumUnitPrice * interval);
+    } else {
+        $('small.interval').html('месечно');
+        $('#classicPrice').html(classicUnitPrice);
+        $('#premiumPrice').html(premiumUnitPrice);
+    }
+}

@@ -90,24 +90,6 @@
         </section>
         <hr>
     </div>
-    <!-- <div class="wrapper-gray">
-        <div class="container">
-            <section>
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="lead">
-                            <input type="text" class="form-control input-lg" placeholder="Entet your email address"><br>
-                            <button class="btn btn-success btn-lg">Sign up for newsletters!</button>
-                        </p>
-                        <p class="text-muted">
-                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, quam.</small>
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div> -->
     <div class="container" id="pricing">
         <section>
             <h1 class="text-center">Flexible pricing for premium packages.</h1>
@@ -128,12 +110,13 @@
                                 <li><span class="emp">Неограничени</span> Документи</li>
                                 <li>1 Корисник</li>
                                 <li>Стандардна Подршка</li>
+                                <li>Onivo Брендинг</li>
                             </ul>
                         </div>
                         <div class="panel-footer">
                             <h3>
                                 0 <span class="currency">MKD</span><br>
-                                <small>месечно</small>
+                                <small class="interval">месечно</small>
                             </h3>
                         </div>
                     </div>
@@ -149,19 +132,20 @@
                                 <li>250 Артикли</li>
                                 <li><span class="emp">Неограничени</span> Документи</li>
                                 <li>3 Корисници</li>
-                                <li>Премиум Подршка</li>
+                                <li><span class="emp">Премиум</span> Подршка</li>
+                                <li>Onivo Брендинг</li>
                             </ul>
                         </div>
                         <div class="panel-footer">
                             <h3>
-                                399 <span class="currency">MKD</span><br>
-                                <small>месечно</small>
+                                <span id="classicPrice">399</span> <span class="currency">MKD</span><br>
+                                <small class="interval">месечно</small>
                             </h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="panel panel-default plan">
+                    <div class="panel panel-danger plan">
                         <div class="panel-heading">
                             <h3>Премиум</h3>
                         </div>
@@ -171,21 +155,34 @@
                                 <li><span class="emp">Неограничени</span> Артикли</li>
                                 <li><span class="emp">Неограничени</span> Документи</li>
                                 <li>10 Корисници</li>
-                                <li>Премиум Подршка</li>
+                                <li><span class="emp">Премиум</span> Подршка</li>
+                                <li>Изборен Onivo Брендинг</li>
                             </ul>
                         </div>
                         <div class="panel-footer">
                             <h3>
-                                899 <span class="currency">MKD</span><br>
-                                <small>месечно</small>
+                                <span id="premiumPrice">899</span> <span class="currency">MKD</span><br>
+                                <small class="interval">месечно</small>
                             </h3>
                         </div>
                     </div>
                 </div>
             </div>
             <p class="text-muted text-right">
-                <small>* Paid packages are sold in intervals of 3, 6 or 12 months!</small>
+                <small>* Платените пакети се купуваат со траење од 3, 6 или 12 месеци.</small><br>
+                <small>** Цените се <strong>со вклучен</strong> ДДВ од 18%.</small>
             </p>
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <select name="interval" class="form-control" id="interval">
+                    <option value="">Избери траење</option>
+                    <option value="3">3 месеци</option>
+                    <option value="6">6 месеци</option>
+                    <option value="12">12 месеци</option>
+                </select>
+                </div>
+            </div>
         </section>
     </div>
     <div class="wrapper lightGray" id="pricingAux">
