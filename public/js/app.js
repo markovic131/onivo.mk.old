@@ -211,6 +211,14 @@ $(function() {
         var Me = $(this);
         showPricesForInterval(Me.val());
     });
+
+    //$('#pricingAux').hide();
+
+    // $('#showPricingAux').on('click', function(){
+    //     $('#pricingAux').slideDown();
+    //     return false;
+    // });
+
 });
 
 function showPricesForInterval (interval) {

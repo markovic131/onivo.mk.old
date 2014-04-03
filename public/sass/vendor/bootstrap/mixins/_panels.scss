@@ -5,8 +5,13 @@
 
   & > .panel-heading {
     color: $heading-text-color;
-    background-color: $heading-bg-color;
-    border-color: $heading-border;
+    // background-color: $heading-bg-color;
+    // border-color: $heading-border;
+    @include gradient-vertical(lighten($heading-bg-color, 5%), darken($heading-bg-color, 5%), 0%, 100%);
+    border-color: darken($heading-bg-color, 10%);
+    border-bottom-color: darken($heading-bg-color, 20%);
+    //text-shadow: $text-shadow;
+    @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, .1));
 
     + .panel-collapse > .panel-body {
       border-top-color: $border;

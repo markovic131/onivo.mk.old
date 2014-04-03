@@ -13,22 +13,19 @@ $app->register(new Silex\Provider\TwigServiceProvider(), [
 
 //Error Handlers
 $app->error(function (\Exception $e) use ($app) {
-
-    if ($e instanceof NotFoundHttpException) {
+    if ($e instanceof Symfony\Component\HttpKernel\Exception\NotFoundHttpException) {
 
         return $app['twig']->render('_errors/404.twig');
-
     }
-
     return $app['twig']->render('_errors/500.twig');
 });
 
 //Routes
-$app->get('/terms', function() use($app) {
+$app->get('/terms-of-service', function() use($app) {
     return $app['twig']->render('terms.twig');
 });
 
-$app->get('/privacy', function() use($app) {
+$app->get('/privacy-policy', function() use($app) {
     return $app['twig']->render('privacy.twig');
 });
 
