@@ -21,6 +21,15 @@ $app->error(function (\Exception $e) use ($app) {
 });
 
 //Routes
+$app->get('/login', function() use($app) {
+    header('Location: http://app.onivo.mk/login?lang=mk', true, 301);
+    die;
+});
+$app->get('/register', function() use($app) {
+    header('Location: http://app.onivo.mk/register?lang=mk', true, 301);
+    die;
+});
+
 $app->get('/terms-of-service', function() use($app) {
     return $app['twig']->render('terms.twig');
 });
