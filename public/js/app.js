@@ -212,7 +212,7 @@ $(function() {
         showPricesForInterval(Me.val());
     });
 
-    $('.onivoPopover').popover();
+    //$('.onivoPopover').popover();
 
     //$('#pricingAux').hide();
 
