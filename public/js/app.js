@@ -212,6 +212,8 @@ $(function() {
         showPricesForInterval(Me.val());
     });
 
+    $('.onivoPopover').popover();
+
     //$('#pricingAux').hide();
 
     // $('#showPricingAux').on('click', function(){

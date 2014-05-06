@@ -38,9 +38,18 @@ footer {
     #social {
         margin-bottom: 25px;
         a {
-            color: #e1e1e1;
+            text-shadow: 1px 3px 3px #333;
             &:hover {
-                color: #fff;
+                color: #fff !important;
+            }
+            &#facebook {
+                color: #3b5998;
+            }
+            &#twitter {
+                color: #55acee;
+            }
+            &#linkedin {
+                color: #4875b4;
             }
         }
     }
