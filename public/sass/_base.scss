@@ -21,13 +21,17 @@ nav {
 }
 
 footer {
-
     padding-top: 100px;
     padding-bottom: 50px;
     color: #e1e1e1;
     background-color: #353739;
-    box-shadow: inset 1px 3px 3px #333;
-    border-top: 1px solid #fff;
+    box-shadow: inset 1px 5px 5px #333;
+    border-top: 1px solid darken(#353739, 5%);
+
+    hr {
+        border-top: 1px solid darken(#353739, 5%);
+        border-bottom: 1px solid lighten(#353739, 5%);
+    }
 
     h3 {
         margin: 0;
@@ -57,8 +61,12 @@ footer {
         }
     }
 
-    #copyright {
+    #madeWithLove {
         padding-top: 80px;
+    }
+
+    #copyright {
+        padding-top: 30px;
         text-align: center;
         text-transform: uppercase;
         a {
