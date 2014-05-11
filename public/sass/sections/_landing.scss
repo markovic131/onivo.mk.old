@@ -2,7 +2,7 @@
  * Landing Section
  */
 #landing {
-    background-image: url(/img/landing.jpg);
+    background-image: url(https://s3-eu-west-1.amazonaws.com/cd-storage/bg.jpg);
     background-size: cover;
     color: #fff;
     padding: 100px 0;
@@ -13,8 +13,8 @@
         text-shadow: 1px 2px 3px #333;
     }
 
-    a.btn {
-        padding: 20px 32px;
-        //text-transform: uppercase;
+    .btnRegister {
+        padding: 20px 45px;
+
     }
 }

@@ -12,10 +12,12 @@
         text-align: center;
         box-shadow: 0 5px 8px #ccc;
 
-        &.plan-popular {
-            margin-top: -1em;
-            zoom: 110%;
-            -moz-transform: scale(1.1);
+        @media (min-width: $screen-md-min) {
+            &.plan-popular {
+                margin-top: -1em;
+                zoom: 110%;
+                -moz-transform: scale(1.1);
+            }
         }
 
         .panel-heading {
