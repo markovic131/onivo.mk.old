@@ -4,4 +4,14 @@
             margin-bottom: 25px;
         }
     }
+
+    #browsersMatrix {
+        padding-top: 10px;
+        @media (max-width: $screen-md-min) {
+            text-align: center;
+        }
+        span.sic {
+            margin-right: 10px;
+        }
+    }
 }
