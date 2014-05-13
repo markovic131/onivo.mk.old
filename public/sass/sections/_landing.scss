@@ -5,8 +5,14 @@
     background-image: url(https://s3-eu-west-1.amazonaws.com/cd-storage/bg.jpg);
     background-size: cover;
     color: #fff;
-    padding: 100px 0;
     box-shadow: 0 2px 3px #ccc;
+
+    @media (min-width: $screen-md-min) {
+        padding: 100px 0;
+    }
+    @media (max-width: $screen-md-min) {
+        padding: 40px 0;
+    }
 
     h1 {
         font-size: 52px;

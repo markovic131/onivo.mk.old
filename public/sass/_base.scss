@@ -16,6 +16,19 @@ nav {
         & > li.login a {
             font-weight: bold;
             color: $brand-primary;
+
+        }
+
+        // & > li.login > a > span {
+        //     display: block;
+        //     padding: 0 5px;
+        //     outline: 1px solid $brand-primary;
+        // }
+        li.divider {
+            margin: 0 5px;
+            height: 80px;
+            border-left: 1px solid lighten($brand-primary, 15%);
+            border-right: 1px solid lighten($brand-primary, 25%);
         }
     }
 }
@@ -42,22 +55,27 @@ footer {
     #social {
         margin-bottom: 25px;
         a {
+            margin-right: 7px;
             text-shadow: 1px 3px 3px #333;
             &:hover {
                 color: #fff !important;
+                text-decoration: none;
             }
-            &#facebook {
-                color: #3b5998;
+            &:last-child {
+                margin-right: 0;
             }
-            &#twitter {
-                color: #55acee;
-            }
-            &#linkedin {
-                color: #4875b4;
-            }
-            &#googlePlus {
-                color: #dd4b39;
-            }
+            // &#facebook {
+            //     color: #3b5998;
+            // }
+            // &#twitter {
+            //     color: #55acee;
+            // }
+            // &#linkedin {
+            //     color: #4875b4;
+            // }
+            // &#googlePlus {
+            //     color: #dd4b39;
+            // }
         }
     }
 
@@ -83,7 +101,13 @@ footer {
     max-width: 940px;
 
     & > section {
-        padding: 100px 0;
+
+        @media (min-width: $screen-md-min) {
+            padding: 100px 0;
+        }
+        @media (max-width: $screen-md-min) {
+            padding: 40px 0;
+        }
 
         & > h1 {
             margin: 0;
@@ -111,3 +135,16 @@ footer {
     }
 
 }
+
+@import "sic/*.png";
+.sic {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+
+    margin-right: 5px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+@include all-sic-sprites;
