@@ -52,30 +52,44 @@ footer {
         text-shadow: 1px 3px 3px #333;
     }
 
-    #social {
-        margin-bottom: 25px;
-        a {
-            margin-right: 7px;
-            text-shadow: 1px 3px 3px #333;
-            &:hover {
-                color: #fff !important;
-                text-decoration: none;
+    #followUs {
+        @media (min-width: $screen-md-min) {
+            text-align: left;
+        }
+        @media (max-width: $screen-md-min) {
+            text-align: center;
+        }
+        #social {
+            margin-bottom: 25px;
+            a {
+                margin-right: 7px;
+                text-shadow: 1px 3px 3px #333;
+                &:hover {
+                    color: #fff !important;
+                    text-decoration: none;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
             }
-            &:last-child {
-                margin-right: 0;
-            }
-            // &#facebook {
-            //     color: #3b5998;
-            // }
-            // &#twitter {
-            //     color: #55acee;
-            // }
-            // &#linkedin {
-            //     color: #4875b4;
-            // }
-            // &#googlePlus {
-            //     color: #dd4b39;
-            // }
+        }
+    }
+
+    #aboutOnivo {
+        @media (min-width: $screen-md-min) {
+            text-align: left;
+        }
+        @media (max-width: $screen-md-min) {
+            text-align: center;
+        }
+    }
+
+    #contact {
+        @media (min-width: $screen-md-min) {
+            text-align: right;
+        }
+        @media (max-width: $screen-md-min) {
+            text-align: center;
         }
     }
 

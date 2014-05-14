@@ -15,12 +15,13 @@
     }
 
     h1 {
-        font-size: 52px;
+        font-size: 62px;
         text-shadow: 1px 2px 3px #333;
+        margin-bottom: 20px;
     }
 
     .btnRegister {
+        text-transform: uppercase;
         padding: 20px 45px;
-
     }
 }
