@@ -22,11 +22,11 @@ $app->error(function (\Exception $e) use ($app) {
 
 //Routes
 $app->get('/login', function() use($app) {
-    header('Location: http://app.onivo.mk', true, 301);
+    header('Location: https://app.onivo.mk', true, 301);
     die;
 });
 $app->get('/register', function() use($app) {
-    header('Location: http://app.onivo.mk/register', true, 301);
+    header('Location: https://app.onivo.mk/register', true, 301);
     die;
 });
 
@@ -39,5 +39,8 @@ $app->get('/privacy-policy', function() use($app) {
 });
 
 $app->get('/', function() use($app) {
-    return $app['twig']->render('index.twig');
+
+    $data['registerLink'] = "https://app.onivo.mk/register";
+
+    return $app['twig']->render('index.twig',$data);
 });
