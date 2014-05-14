@@ -91,16 +91,41 @@ footer {
         @media (max-width: $screen-md-min) {
             text-align: center;
         }
+
+        a {
+            color: #fff;
+            //font-weight: bold;
+        }
     }
 
     #madeWithLove {
         padding-top: 80px;
+        p {
+            font-size: 24px;
+            text-transform: uppercase;
+        }
     }
 
     #copyright {
         padding-top: 30px;
-        text-align: center;
+        //text-align: center;
         text-transform: uppercase;
+        div:first-child {
+            @media (min-width: $screen-md-min) {
+                text-align: left;
+            }
+            @media (max-width: $screen-md-min) {
+                text-align: center;
+            }
+        }
+        div:last-child {
+            @media (min-width: $screen-md-min) {
+                text-align: right;
+            }
+            @media (max-width: $screen-md-min) {
+                text-align: center;
+            }
+        }
         a {
             color: #fff;
             &:hover {
