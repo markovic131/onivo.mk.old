@@ -5,8 +5,18 @@ body {
 nav {
     text-transform: uppercase;
     font-size: 13px;
+    @include opacity(0.93);
+
+    .navbar-brand {
+        color: #333 !important;
+    }
 
     #navigation {
+
+        a {
+            color: #333;
+        }
+
         & > li.active a {
             padding-top: 27px;
             background-color: transparent;
