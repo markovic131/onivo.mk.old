@@ -39,8 +39,5 @@ $app->get('/privacy-policy', function() use($app) {
 });
 
 $app->get('/', function() use($app) {
-
-    $data['registerLink'] = "https://app.onivo.mk/register";
-
-    return $app['twig']->render('index.twig',$data);
+    return $app['twig']->render('index.twig');
 });
