@@ -228,11 +228,11 @@ function showPricesForInterval (interval) {
         premiumUnitPrice = 899;
 
     if(interval) {
-        $('small.interval').html(interval + ' месеци');
+        $('.interval').html(interval + ' месеци');
         $('#classicPrice').html(classicUnitPrice * interval);
         $('#premiumPrice').html(premiumUnitPrice * interval);
     } else {
-        $('small.interval').html('месечно');
+        $('.interval').html('месечно');
         $('#classicPrice').html(classicUnitPrice);
         $('#premiumPrice').html(premiumUnitPrice);
     }
