@@ -1,9 +1,20 @@
 .legal {
+    h1 {
+        font-size: 50px;
+        //text-transform: uppercase;
+    }
     h3 {
         //text-transform: uppercase;
         margin-top: 40px;
+        //text-transform: capitalize;
     }
     p {
-        font-size: 16px;
+        text-align: justify;
+        margin-bottom: 20px;
+        //font-size: 16px;
+    }
+
+    .text-uppercase {
+        text-transform: uppercase;
     }
 }
