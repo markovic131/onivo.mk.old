@@ -1,7 +1,8 @@
 #responsive {
     img {
+        width: 100%;
         @media (max-width: $screen-md-min) {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
     }
 
