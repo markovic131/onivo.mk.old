@@ -8,7 +8,12 @@ nav {
     @include opacity(0.93);
 
     .navbar-brand {
-        color: #333 !important;
+        //color: #333 !important;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        img {
+            height: 30px;
+        }
     }
 
     #navigation {
