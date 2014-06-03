@@ -2,7 +2,7 @@ RewriteEngine on
 RewriteRule ^$ public/    [L]
 RewriteRule (.*) public/$1 [L]
 
-AuthType Basic
-AuthName "Onivo Private Area"
-AuthUserFile "/home4/psybaron/.htpasswds/onivo.mk/passwd"
-require valid-user
+#AuthType Basic
+#AuthName "Onivo Private Area"
+#AuthUserFile "/home4/psybaron/.htpasswds/onivo.mk/passwd"
+#require valid-user
