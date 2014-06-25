@@ -1,20 +1,27 @@
-.legal {
-    h1 {
-        font-size: 50px;
-        //text-transform: uppercase;
-    }
-    h3 {
-        //text-transform: uppercase;
-        margin-top: 40px;
-        //text-transform: capitalize;
-    }
-    p {
-        text-align: justify;
-        margin-bottom: 20px;
-        //font-size: 16px;
-    }
+#legal {
 
-    .text-uppercase {
-        text-transform: uppercase;
+    section {
+
+        padding-top: 160px;
+
+        h1 {
+            font-size: 50px;
+            margin-top: 0;
+            //text-transform: uppercase;
+        }
+        h3 {
+            //text-transform: uppercase;
+            margin-top: 40px;
+            //text-transform: capitalize;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+            //font-size: 16px;
+        }
+
+        .text-uppercase {
+            text-transform: uppercase;
+        }
     }
 }

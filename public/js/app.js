@@ -18,10 +18,10 @@
         defaults: {
             navItems: 'a',
             currentClass: 'active',
-            changeHash: true,
+            changeHash: false,
             easing: 'swing',
             filter: '',
-            scrollSpeed: 750,
+            scrollSpeed: 500,
             scrollThreshold: 0.5,
             begin: false,
             end: false,
@@ -211,16 +211,6 @@ $(function() {
         var Me = $(this);
         showPricesForInterval(Me.val());
     });
-
-    //$('.onivoPopover').popover();
-
-    //$('#pricingAux').hide();
-
-    // $('#showPricingAux').on('click', function(){
-    //     $('#pricingAux').slideDown();
-    //     return false;
-    // });
-
 });
 
 function showPricesForInterval (interval) {
