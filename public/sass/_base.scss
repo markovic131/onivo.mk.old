@@ -1,5 +1,5 @@
 body {
-    //padding-top: 80px;
+    padding-top: 80px;
 }
 
 nav {
@@ -10,10 +10,11 @@ nav {
     .navbar-brand {
         font-weight: bold;
         //color: #333 !important;
-        // padding-top: 25px;
-        // padding-bottom: 25px;
+        // padding-top: 15px;
+        // padding-bottom: 15px;
         // img {
-        //     height: 30px;
+        //     height: 50px;
+        //     @include opacity(0.88);
         // }
     }
 
