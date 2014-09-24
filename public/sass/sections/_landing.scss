@@ -1,7 +1,7 @@
 #landing {
 
     position: relative;
-    background: url(/img/bg3.jpg) no-repeat center bottom fixed;
+    background: url(/img/onivo_background_2.jpg) no-repeat center bottom fixed;
     @include background-size(cover);
     color: #fff;
     box-shadow: 0 2px 3px #ccc;
@@ -16,7 +16,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            @include opacity(0.25);
+            @include opacity(0.45);
         }
     }
     @media (max-width: $screen-md-min) {
@@ -29,7 +29,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            @include opacity(0.25);
+            @include opacity(0.45);
         }
     }
 
