@@ -14,6 +14,10 @@ $app->get('/faq', function() use ($app) {
     return $app['twig']->render('faq.twig');
 });
 
+$app->get('/save-trees', function() use ($app) {
+    return $app['twig']->render('trees.twig');
+});
+
 $app->get('/terms-of-service', function() use($app) {
     return $app['twig']->render('terms.twig');
 });
