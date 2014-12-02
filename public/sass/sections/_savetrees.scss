@@ -1,0 +1,34 @@
+section#saveTreesLanding {
+
+    padding: 20px 0;
+    background: darken($brand-success, 10%);
+    color: #fff;
+
+    a, a:visited, a:hover {
+        color: #fff;
+    }
+}
+
+#saveTrees {
+
+    section {
+
+        padding-top: 160px;
+
+        h1 {
+            font-size: 50px;
+            margin-top: 0;
+        }
+        h3 {
+            margin-top: 40px;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .text-uppercase {
+            text-transform: uppercase;
+        }
+    }
+}

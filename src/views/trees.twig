@@ -1,34 +1,54 @@
 {% extends "layout.twig" %}
 
-{% block title 'Често поставувани прашања' %}
-{% block description 'Често поставувани прашања за Ониво' %}
+{% block title 'Заштитете ги дрвјата и заштедете - со Onivo' %}
+{% block description 'Користење на електронски фактури (е-фактури) ги намалува трошоците за фактурирање до 70%.' %}
+{% block ogImage %}
+    <meta property="og:image" content="{{ app.request.uri }}/img/share5.jpg">
+    {{ parent() }}
+{% endblock %}
 
 {% block content %}
     <div class="container" id="saveTrees">
         <section>
             <div class="row">
-                <div class="col-md-10">
-                    <h1>Ониво и дрвјата</h1>
-                    <div class="row">
-                        <div class="col-md-9">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <p>
-                                Share our cause:
-                                <a href="#">Tweet</a> /
-                                <a href="#">Facebook</a>
-                            </p>
+                <div class="col-md-8">
+                    <h1>Заштитете ги дрвјата и заштедете<br>- со Onivo!</h1>
+                    <p class="lead">
+                        Користење на електронски фактури (е-фактури) ги намалува трошоците за фактурирање до 70%.
+                    </p>
+                    <p>
+                        Денес и покрај дигиталната ера, во Европа секоја година се испраќаат и примаат над 30 милијарди фактури, од кои повеќе од 90% се во хартиена форма. [Во Македонија оваа бројка изнесува околу 99%.] Таквата ситуација не значи само поголем труд и склоност кон грешки, туку и финансиски и еколошки трошоци.{#  Овие мануелни односно рачни операции го забавуваат порамнувањето на фактурите,  што води кон лоши односи со добавувачите и купувачите, и потенцијално лошо управување со готовинските текови. #}<br><br>
+                        Електронското фактурирање им овозможува на компаниите да ги отстранат мануелните операции, да го забрзаат процесот на фактурирање и да ги елиминираат активностите кои не додаваат вредност т.е да ги намалат трошоците до 70% и да допринесат кон заштита на шумските зелени појаси.
+                    </p>
+                    <hr>
+                    <p class="lead">
+                        #GoOnivo #SaveTrees #GoGreen
+                    </p>
+                    <p>
+                        <div id="tweet" class="pull-left" style="margin-right:10px;">
+                            <a class="twitter-share-button"
+                               href="https://twitter.com/share"
+                              data-via="onivomk"
+                              data-text="Заштитете ги дрвјата и заштедете - со Onivo!"
+                              data-hashtags="GoOnivo, SaveTrees, GoGreen"
+                              data-count="vertical">
+                            Tweet
+                            </a>
                         </div>
-                        <div class="col-md-3 text-center" style="color:green">
-                            <i class="fa fa-tree fa-3x"></i>
-                        </div>
-                    </div>
+                        <div class="pull-left fb-share-button" data-href="http://onivo.mk/save-trees" data-layout="box_count"></div>
+                    </p>
+                    <div class="clearfix"></div>
+                    <br>
+                    <p>
+                        <small>
+                            <a href="http://www.ricoh-europe.com/Images/e-invoicing-whitepaper_t_57-29043.pdf" target="_blank">Извор</a>
+                        </small>
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h1>&nbsp;</h1>
+                    <img src="/img/tree.jpg" alt="" class="img-responsive">
+                    {# <h1>Onivo <i class="fa fa-heart"></i> <i class="fa fa-tree"></i></h1> #}
                 </div>
             </div>
         </section>
