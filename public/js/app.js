@@ -214,16 +214,22 @@ $(function() {
 });
 
 function showPricesForInterval (interval) {
-    var classicUnitPrice = 399,
-        premiumUnitPrice = 899;
+    var classicOldUnitPrice = 399,
+        premiumOldUnitPrice = 899;
+    var classicUnitPrice = 299,
+        premiumUnitPrice = 699;
 
     if(interval) {
         $('.interval').html(interval + ' месеци');
         $('#classicPrice').html(classicUnitPrice * interval);
         $('#premiumPrice').html(premiumUnitPrice * interval);
+        $('#classicOldPrice').html(classicOldUnitPrice * interval);
+        $('#premiumOldPrice').html(premiumOldUnitPrice * interval);
     } else {
         $('.interval').html('месечно');
         $('#classicPrice').html(classicUnitPrice);
         $('#premiumPrice').html(premiumUnitPrice);
+        $('#classicOldPrice').html(classicOldUnitPrice);
+        $('#premiumOldPrice').html(premiumOldUnitPrice);
     }
 }

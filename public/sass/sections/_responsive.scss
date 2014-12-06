@@ -1,18 +1,23 @@
-#responsive {
-    img {
-        width: 100%;
-        @media (max-width: $screen-md-min) {
-            margin-bottom: 30px;
-        }
-    }
+#responsiveWrapper {
 
-    #browsersMatrix {
-        padding-top: 10px;
-        @media (max-width: $screen-md-min) {
-            text-align: center;
+    border-bottom: 1px solid #C8DCED;
+
+    #responsive {
+        img {
+            width: 100%;
+            @media (max-width: $screen-md-min) {
+                margin-bottom: 30px;
+            }
         }
-        span.sic {
-            margin-right: 10px;
+
+        #browsersMatrix {
+            padding-top: 10px;
+            @media (max-width: $screen-md-min) {
+                text-align: center;
+            }
+            span.sic {
+                margin-right: 10px;
+            }
         }
     }
 }

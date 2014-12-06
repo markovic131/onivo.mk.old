@@ -26,6 +26,21 @@ $app->get('/privacy-policy', function() use($app) {
     return $app['twig']->render('privacy.twig');
 });
 
+$app->get('/feature/{page}', function($page) use($app) {
+
+    $twigViewPath   = $app['twig.path'] . "/";
+    $featuresFolder = "_pages/_features/";
+    $requestedFile  = $page . ".twig";
+
+    if(!file_exists($twigViewPath . $featuresFolder . $requestedFile)) {
+
+        throw new Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+    }
+
+    return $app['twig']->render($featuresFolder.$requestedFile);
+
+});
+
 $app->get('/', function() use($app) {
     return $app['twig']->render('index.twig');
 });
