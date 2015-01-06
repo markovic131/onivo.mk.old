@@ -1,10 +1,10 @@
 #landing {
 
     position: relative;
-    background: url(/img/onivo_background_2.jpg) no-repeat center bottom fixed;
+    background: url(/img/012015.jpg) no-repeat center bottom fixed;
     @include background-size(cover);
     color: #fff;
-    box-shadow: 0 2px 3px #ccc;
+    //box-shadow: 0 2px 3px #ccc;
 
     @media (min-width: $screen-md-min) {
         padding: 90px 0;
@@ -16,7 +16,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            @include opacity(0.45);
+            @include opacity(0.6);
         }
     }
     @media (max-width: $screen-md-min) {
@@ -29,7 +29,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            @include opacity(0.45);
+            @include opacity(0.6);
         }
     }
 
