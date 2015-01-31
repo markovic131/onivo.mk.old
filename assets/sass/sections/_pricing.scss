@@ -1,0 +1,96 @@
+/**
+ * Pricing Section
+ */
+//#snowflakesWrapper {
+
+    //background: url(/img/pattern_40.jpg) repeat;
+
+#pricing {
+
+    section {
+        padding-bottom: 50px;
+    }
+
+    .plan {
+        text-align: center;
+        box-shadow: 0 5px 8px #ccc;
+
+        @media (min-width: $screen-md-min) {
+            &.plan-popular {
+                margin-top: -1em;
+                zoom: 110%;
+                -moz-transform: scale(1.1);
+            }
+        }
+
+        .panel-heading {
+
+            padding: 15px 28px;
+            text-transform: uppercase;
+
+            h3 {
+                margin:0;
+            }
+        }
+
+        .panel-body {
+            ul {
+                li {
+                    padding-top: 0;
+                    padding-bottom: 5px;
+
+                    .emp {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .panel-footer {
+
+            .priceOnDiscount {
+                text-decoration: line-through;
+            }
+
+            .newPrice {
+                color: darken($brand-danger, 10%);
+            }
+
+            h3 {
+                font-size: 36px;
+                margin-bottom: 0;
+                .currency {
+                    //color: #999;
+                    font-size: 16px;
+                    font-family: $font-family-sans-serif;
+                }
+            }
+        }
+
+    }
+}
+
+#pricingAux {
+
+    box-shadow: inset 1px 3px 3px #ccc;
+
+    section {
+        padding: 50px 0;
+    }
+
+    #visitFaq {
+        h3 {
+            a, a:link, a:visited {
+                color: #686864;
+            }
+        }
+    }
+}
+
+#giveMeMyAccount {
+    a {
+        text-transform: uppercase;
+        padding: 20px 45px;
+    }
+}
+//}

@@ -1,0 +1,14 @@
+{
+  "name": "onivo.mk",
+  "description": "Onivo Website",
+  "homepage": "https://github.com/psybaron/onivo.mk",
+  "version": "1.0.0",
+  "author": {
+    "name": "Marko Aleksic",
+    "url": "https://markoaleksic.com"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-uglify": "^1.1.0"
+  }
+}

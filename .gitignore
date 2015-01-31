@@ -2,8 +2,10 @@
 *.sublime-workspace
 
 /vendor
+/node_modules
 /public/.sass-cache
 
 composer.phar
 composer.lock
+npm-debug.log
 .DS_Store
