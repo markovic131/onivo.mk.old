@@ -1,10 +1,19 @@
 var gulp   = require('gulp');
 var uglify = require('gulp-uglify');
+// var sass   = require('gulp-sass');
+// var watch  = require('gulp-watch');
 
 // gulp.task('compress', function() {
 //   gulp.src('lib/*.js')
 //     .pipe(uglify())
 //     .pipe(gulp.dest('dist'))
+// });
+
+
+// gulp.task('sass', function() {
+//     return gulp.src('assets/sass/*.scss')
+//         .pipe(sass())
+//         .pipe(gulp.dest('public/css'));
 // });
 
 gulp.task('compress', function() {
@@ -27,7 +36,8 @@ gulp.task('compress', function() {
 // });
 
 // gulp.task('watch', function () {
-//     gulp.watch('assets/js/**/*.js', ['js-onivo']);
+//     gulp.watch('assets/sass/**/*.scss', ['sass']);
+//     gulp.watch('assets/js/**/*.js', ['compress']);
 // });
 
 gulp.task('default', ['compress']);

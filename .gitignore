@@ -4,6 +4,7 @@
 /vendor
 /node_modules
 /public/.sass-cache
+/assets/.sass-cache
 
 composer.phar
 composer.lock
