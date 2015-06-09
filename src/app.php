@@ -12,10 +12,10 @@ $app->register(new Silex\Provider\TwigServiceProvider(), [
 ]);
 
 //Before Middleware
-$app->before(function($req, $app) {
-    $app['twig']->addGlobal('route', $req->get('_route'));
-    //$route = $app['routes']->get($req->get('_route'));
-});
+// $app->before(function($req, $app) {
+//     $app['twig']->addGlobal('route', $req->get('_route'));
+//     //$route = $app['routes']->get($req->get('_route'));
+// });
 
 
 //Error Handlers
