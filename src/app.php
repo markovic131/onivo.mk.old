@@ -11,6 +11,13 @@ $app->register(new Silex\Provider\TwigServiceProvider(), [
     'twig.path' => __DIR__ . '/views',
 ]);
 
+//Before Middleware
+$app->before(function($req, $app) {
+    $app['twig']->addGlobal('route', $req->get('_route'));
+    //$route = $app['routes']->get($req->get('_route'));
+});
+
+
 //Error Handlers
 $app->error(function (\Exception $e) use ($app) {
     if ($e instanceof Symfony\Component\HttpKernel\Exception\NotFoundHttpException) {

@@ -11,6 +11,9 @@
 // });
 
 $app->get('/faq', function() use ($app) {
+
+    $app['twig']->addGlobal('route', 'faq');
+
     return $app['twig']->render('faq.twig');
 });
 
