@@ -34,7 +34,7 @@
                             <span>0</span>
                         </h3>
                         <p>
-                            ден / <span class="interval">месечно</span>
+                            <span class="interval">месечно</span>
                         </p>
                     </div>
                 </div>
@@ -63,7 +63,13 @@
                             <span id="classicPrice">399</span>
                         </h3>
                         <p>
-                            ден / <span class="interval">месечно</span>
+                            <span class="interval">месечно</span>
+                        </p>
+                        <p class="text-danger interval6 hidden">
+                            +1 месец ГРАТИС
+                        </p>
+                        <p class="text-danger interval12 hidden">
+                            +3 месеци ГРАТИС
                         </p>
                     </div>
                 </div>
@@ -92,7 +98,13 @@
                             <span id="premiumPrice">899</span>
                         </h3>
                         <p>
-                            ден / <span class="interval">месечно</span>
+                            <span class="interval">месечно</span>
+                        </p>
+                        <p class="text-danger interval6 hidden">
+                            +1 месец ГРАТИС
+                        </p>
+                        <p class="text-danger interval12 hidden">
+                            +3 месеци ГРАТИС
                         </p>
                     </div>
                 </div>
@@ -102,7 +114,7 @@
         <div class="row">
             <div class="col-md-6 col-sm-6 text-left">
                 <p>
-                    <strong><i class="fa fa-info-circle fa-fw"></i> БЕЗ скриени трошоци!</strong><br>
+                    <b><i class="fa fa-info-circle fa-fw"></i> БЕЗ скриени трошоци!</b><br>
                     Onivo <em>никогаш</em> не наплаќа месечни или годишни одржувања.<br>
                     Користете го колку сакате и кога сакате.
                 </p>
@@ -110,13 +122,16 @@
             <div class="col-md-6 col-sm-6">
                 <p class="text-muted text-right">
                     <small>* Платените пакети се купуваат во периоди од 3, 6 или 12 месеци.</small><br>
-                    <small>** Цените се изразени во MKD <strong>со вклучен ДДВ</strong> од 18%.</small>
+                    <small>** Цените се изразени во MKD <b>со вклучен ДДВ</b> од 18%.</small>
+                    <small class="text-danger text-right hidden" id="promoOfferHelp"><br>
+                        <b>*** Промотивната понуда важи до 31.12.2015.</b>
+                    </small>
                 </p>
                 <select name="interval" class="form-control" id="interval">
                     <option value="">Избери период</option>
                     <option value="3">3 месеци</option>
-                    <option value="6">6 месеци</option>
-                    <option value="12">12 месеци</option>
+                    <option value="6">6 месеци (+1 ГРАТИС)</option>
+                    <option value="12">12 месеци (+3 ГРАТИС)</option>
                 </select>
             </div>
         </div>

@@ -232,4 +232,21 @@ function showPricesForInterval (interval) {
         // $('#classicOldPrice').html(classicOldUnitPrice);
         // $('#premiumOldPrice').html(premiumOldUnitPrice);
     }
+
+    if(interval == 3 || interval == '') {
+        $('.interval6').addClass('hidden');
+        $('.interval12').addClass('hidden');
+        $('#promoOfferHelp').addClass('hidden');
+    }
+
+    if(interval == 6) {
+        $('.interval12').addClass('hidden');
+        $('.interval6').removeClass('hidden');
+        $('#promoOfferHelp').removeClass('hidden');
+    }
+    if(interval == 12) {
+        $('.interval6').addClass('hidden');
+        $('.interval12').removeClass('hidden');
+        $('#promoOfferHelp').removeClass('hidden');
+    }
 }
